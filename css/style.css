@@ -1,0 +1,584 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --Dark-Color: #263238;
+  --Medium-Dark: #707070;
+  --Main-Color: #00BCD4;
+  --Secondry-Color: #2196F3;
+
+}
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+section {
+  margin-bottom: 200px;
+}
+
+/* start header  */
+header {
+  background-color: var(--Dark-Color);
+
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container h1 {
+  color: var(--Secondry-Color);
+}
+
+header .container .links {
+  display: flex;
+
+
+}
+
+header .container .links a {
+  margin-right: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--Main-Color);
+}
+
+a:visited {
+  color: var(--Main-Color);
+}
+
+header .container .links a:last-child {
+  margin-right: 0;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.showwhenmob {
+  position: relative;
+}
+
+.showwhenmob .links {
+  opacity: 0;
+  position: absolute;
+  flex-direction: column;
+  width: 100%;
+  top: 79px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--Dark-Color);
+  text-align: center;
+  transition: .5s;
+  z-index: -1;
+}
+
+.showwhenmob .links.active {
+  opacity:  1;
+  transition: .5s;
+  z-index: 200;
+
+}
+
+.showwhenmob .links a {
+  margin-right: 0 !important;
+  margin-bottom: 20px;
+  
+}
+.showwhenmob{
+  display: none;
+}
+
+@media (max-width:767px) {
+  .hiddenwhenmob {
+    display: none;
+  }
+  .showwhenmob{
+    display: block;
+  }
+  
+}
+
+/* end header  */
+
+
+
+
+
+
+/* start main_section */
+section.main-section {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/arpad-czapp-H424WdcQN4Y-unsplash.jpg");
+  background-size: cover;
+}
+
+section.main-section .container {
+  text-align: center;
+  color: white;
+  font-size: 70px;
+}
+
+@media (max-width: 767px) {
+  section.main-section .container {
+    font-size: 35px;
+  }
+}
+
+/* end main_section */
+
+
+
+
+/* start about section */
+.About .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.About .container h3 {
+  color: var(--Secondry-Color);
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+
+.About .container p {
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+.About .container a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--Secondry-Color);
+  font-size: 26px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .About .container p {
+    text-align: center;
+  }
+}
+
+.About .container a::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: black;
+
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+/* end about section */
+
+
+
+/* start projects  */
+
+.Projects .container h3 {
+  color: var(--Secondry-Color);
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.Projects .container .cards {
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.Projects .container .cards .card {
+
+  max-height: 500px;
+  box-shadow: rgba(1, 1, 1, 0.20) 0px 5px 25px;
+  padding: 20px 10px;
+  border-radius: 15px;
+  transition: .4s;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 767px) {
+  .Projects .container .cards {
+    flex-direction: column;
+  }
+
+  .Projects .container .cards .card {
+    width: 85%;
+  }
+
+}
+
+.Projects .container .cards .card:hover {
+  scale: 1.2;
+  transition: .4s;
+}
+
+.Projects .container .cards .card img {
+  width: 100%;
+  object-fit: contain;
+  height: 300px;
+  margin-bottom: 40px;
+}
+
+.Projects .container .cards .card h4 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+
+
+}
+
+.Projects .container .cards .card a {
+  text-decoration: none;
+  color: var(--Secondry-Color);
+  text-align: center;
+  padding: 10px 15px;
+  background-color: #D8D8D8;
+  border-radius: 10px;
+  display: block;
+  width: fit-content;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* end projects  */
+
+
+
+
+
+/* start services */
+.Services .container h3 {
+  color: var(--Secondry-Color);
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.Services .container .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+}
+
+.Services .container .cards .card {
+  width: calc(100% / 2.2);
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  box-shadow: rgba(1, 1, 1, 0.20) 0px 5px 25px;
+  min-height: 880px;
+  border-radius: 20px;
+  transition: .4s;
+  margin-bottom: 60px;
+
+}
+
+@media (max-width: 767px) {
+  .Services .container .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Services .container .cards .card {
+    width: 85%;
+
+    margin-bottom: 200px;
+
+    padding-bottom: 20px;
+  }
+}
+
+.Services .container .cards .card:hover {
+  transition: .4s;
+  scale: 1.2;
+}
+
+.Services .container .cards .card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 20px 20px 0 0;
+
+}
+
+.Services .container .cards .card p {
+  text-align: center;
+  width: 90%;
+  font-size: 20px;
+  line-height: 1.3;
+
+}
+
+/* end services */
+
+
+
+/* start contact us */
+.ContactUs .container h3 {
+  color: var(--Secondry-Color);
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.ContactUs .container .directcontact {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.ContactUs .container .directcontact .whatssapp,
+.ContactUs .container .directcontact .email {
+  display: flex;
+  gap: 5px;
+  font-size: 24px;
+  align-items: center;
+  color: var(--Dark-Color);
+  font-weight: bold;
+}
+
+.ContactUs .container form .first-column,
+.ContactUs .container form .second-column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ContactUs .container form .third-column label {
+  margin-bottom: 15px;
+}
+
+.ContactUs .container form .first-column,
+.ContactUs .container form .second-column {
+  margin-bottom: 20px;
+}
+
+.ContactUs .container form .second-column {
+  margin-bottom: 50px;
+}
+
+.ContactUs .container form input {
+  padding: 8px 20px;
+  border-radius: 10px;
+
+  border: 1px solid var(--Medium-Dark);
+  font-weight: bold;
+}
+
+.ContactUs .container form label {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+}
+
+.ContactUs .container form .emaill,
+.ContactUs .container form .phone-number,
+.ContactUs .container form .second-name,
+.ContactUs .container form .first-name {
+  /* width: 300px; */
+}
+
+.ContactUs .container form .error {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0;
+  text-align: end;
+}
+
+.ContactUs {
+  margin-bottom: 50px;
+}
+
+.ContactUs .container form .third-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ContactUs .container form .third-column textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--Medium-Dark);
+  margin-bottom: 30px;
+}
+
+.ContactUs .container form .third-column button {
+  padding: 8px 20px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: var(--Secondry-Color);
+
+}
+
+.ContactUs .container .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ContactUs .container .footer p {
+  font-size: 14px;
+}
+
+.ContactUs .container .footer .form-sent {
+  opacity: 0;
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+  transition: .4s;
+}
+
+.ContactUs .container .footer .form-sent.done {
+  opacity: 1;
+  transition: .4s;
+}
+
+
+.ContactUs .container .first-name.errorr p {
+
+  opacity: 1;
+}
+
+.ContactUs .container .emaill.errorr p {
+
+  opacity: 1;
+}
+
+.ContactUs .container .second-name.errorr p {
+
+  opacity: 1;
+}
+
+.ContactUs .container .phone-number.errorr p {
+
+  opacity: 1;
+}
+
+.ContactUs .container form .third-column label {
+  width: initial;
+}
+textarea{
+  width: 50%;
+  height: 250px;
+
+}
+@media (max-width: 767px) {
+
+  .ContactUs .container form .first-column,
+  .ContactUs .container form .second-column {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .directcontact {
+    flex-direction: column;
+
+  }
+
+  .directcontact .whatssapp,
+  .directcontact .email {
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 18px !important;
+    max-width: 95%;
+    overflow: hidden;
+
+  }
+  .directcontact .whatssapp p,
+  .directcontact .email p{
+    max-width: 100%;
+  }
+
+  .ContactUs .container form .emaill,
+  .ContactUs .container form .phone-number,
+  .ContactUs .container form .second-name,
+  .ContactUs .container form .first-name {
+    text-align: center;
+  }
+
+  .ContactUs .container form .emaill p,
+  .ContactUs .container form .phone-number p,
+  .ContactUs .container form .second-name p,
+  .ContactUs .container form .first-name p {
+    text-align: center;
+    width: 200px;
+  }
+
+  .third-column {
+    text-align: center;
+  }
+  textarea{
+    width: 100% !important;
+  }
+}
+
+/* end contact us */

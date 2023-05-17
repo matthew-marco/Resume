@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matthew</title>
+  <meta name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalis.css">
+  <link rel="stylesheet" href="./css/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="hiddenwhenmob">
+    <div class="container">
+      <h1>Matthew</h1>
+
+      <div class="links">
+        <a href="#About">About</a>
+        <a href="#Projects">Projects </a>
+        <a href="#Services">Services</a>
+      </div>
+
+    </div>
+  </header>
+  <header class="showwhenmob">
+    <div class="container">
+      <h1>Matthew</h1>
+      <i class="fa-solid fa-bars"></i>
+      <div class="links">
+        <a href="#About">About</a>
+        <a href="#Projects">Projects </a>
+        <a href="#Services">Services</a>
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+  <section class="main-section">
+    <div class="container">
+      <h2>Hello I Am Matthew
+        A Frontend Developer</h2>
+    </div>
+  </section>
+
+
+
+  <section class="About" id="About">
+    <div class="container">
+      <h3>About Me</h3>
+      <p>My name is Matthew and I'm a frontend developer with one year of experience. I have worked on a variety of
+        projects, including <a href="#Projects">Projects</a>
+
+        My approach to frontend development is to prioritize user experience and create responsive, accessible designs
+        that are both functional and visually appealing.
+
+        Outside of work, I enjoy Online Gaming And Chess.</p>
+    </div>
+  </section>
+
+
+
+  <section class="Projects" id="Projects">
+    <div class="container">
+      <h3>Projects</h3>
+      <div class="cards">
+        <div class="card">
+          <img src="./assets/Screenshot 2023-05-14 105204.jpg" alt="">
+          <h4>clipboard-landing-page-master</h4>
+          <a href="https://matthew-marco.github.io/clipboard-landing-page-master/" target="_blank">Visit the website</a>
+        </div>
+        <div class="card">
+          <img src="./assets/Screenshot 2023-05-14 105233.jpg" alt="">
+          <h4>manage-landing-page-master</h4>
+          <a href="https://matthew-marco.github.io/manage-landing-page-master/" target="_blank">Visit the website</a>
+        </div>
+        <div class="card">
+          <img src="./assets/Screenshot 2023-05-14 105303.jpg" alt="">
+          <h4>notifications-page-main</h4>
+          <a href="https://matthew-marco.github.io/notifications-page-main/" target="_blank">Visit the website</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Services" id="Services">
+    <div class="container">
+      <h3>Services</h3>
+      <div class="cards">
+        <div class="card">
+          <img src="./assets/webdesign.jpg" alt="">
+          <p>I Am A Skilled Web Designer With A Passion For Creating Beautiful And Functional Websites. I Have
+            Experience In Designing Responsive Websites That Are Optimized For Different Screen Sizes And Devices. My
+            Design Process Involves Understanding The Needs Of The Client And Their Target Audience, And Creating
+            User-Friendly Interfaces That Are Easy To Navigate.
+
+            I Have Expertise In Using Design Tools Such As Adobe Photoshop, And Adobe Xd , And I Am Proficient In HTML,
+            CSS, And Javascript.</p>
+
+        </div>
+        <div class="card">
+          <img src="./assets/webdevlopment.jpg" alt="">
+          <p>As A Skilled Web Developer, I Have Experience In Building Dynamic And Interactive Web Applications Using
+            Modern Web Technologies. I Am Proficient In HTML, CSS And Javascript.</p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="ContactUs" id="ContactUs">
+    <div class="container">
+      <h3>ContactUs</h3>
+      <div class="directcontact">
+        <div class="whatssapp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <p>+201270969500</p>
+        </div>
+        <div class="email">
+          <i class="fa-solid fa-envelope"></i>
+          <p>matthewmarcoyoussef@gmail.com
+          </p>
+        </div>
+      </div>
+      <form>
+
+        <div class="first-column">
+          <div class="first-name">
+            <label for="first">First Name</label>
+            <input type="text" placeholder="First Name" id="first" name="firstName">
+            <p class="error">This Field Is Required</p>
+          </div>
+          <div class="second-name">
+            <label for="last">Last Name</label>
+            <input type="text" placeholder="Last Name" id="last" name="secondName">
+
+            <p class="error">This Field Is Required</p>
+          </div>
+
+        </div>
+        <div class="second-column">
+          <div class="emaill">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email" id="email" name="emailAddress">
+            <p class="error">This Field Is Required</p>
+          </div>
+          <div class="phone-number">
+            <label for="phonenumber">Phone Number</label>
+            <input type="text" placeholder="Phone Number" id="phonenumber" name="phoneNumber">
+            <p class="error">This Field Is Required</p>
+          </div>
+        </div>
+        <div class="third-column">
+          <label for="msg">Enter Your Message</label>
+          <textarea name="data" class="data" id="msg" placeholder="Enter Your Message" ></textarea>
+
+          <button>Send Your Email</button>
+          <p class="error">This Field Is Required</p>
+        </div>
+      </form>
+      <div class="footer">
+        <h6 class="form-sent">Email sent</h6>
+        <p>copyrights by matthew</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    emailjs.init('Aq1kYspCCRHGo5UM1')
+  </script>
+
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
