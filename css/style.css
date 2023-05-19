@@ -242,7 +242,6 @@ section.main-section .container {
 
 .Projects .container .cards .card {
 
-  max-height: 500px;
   box-shadow: rgba(1, 1, 1, 0.20) 0px 5px 25px;
   padding: 20px 10px;
   border-radius: 15px;
@@ -432,12 +431,7 @@ section.main-section .container {
   display: block;
 }
 
-.ContactUs .container form .emaill,
-.ContactUs .container form .phone-number,
-.ContactUs .container form .second-name,
-.ContactUs .container form .first-name {
-  /* width: 300px; */
-}
+
 
 .ContactUs .container form .error {
   color: red;
@@ -580,5 +574,8 @@ textarea{
     width: 100% !important;
   }
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; }
 
 /* end contact us */
